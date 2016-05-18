@@ -1,0 +1,181 @@
+﻿<phone:PhoneApplicationPage x:Class="DawaReminder.help"
+                            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                            xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+                            xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+                            xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                            xmlns:UI="clr-namespace:Microsoft.Advertising.Mobile.UI;assembly=Microsoft.Advertising.Mobile.UI"
+                            FontFamily="{StaticResource PhoneFontFamilyNormal}"
+                            FontSize="{StaticResource PhoneFontSizeNormal}"
+                            Foreground="{StaticResource PhoneForegroundBrush}"
+                            SupportedOrientations="PortraitOrLandscape"
+                            Loaded="PhoneApplicationPage_Loaded"
+                            Orientation="Portrait"
+                            mc:Ignorable="d"
+                            shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot"
+          Margin="0,0,0,-710">
+        <Grid.Background>
+            <ImageBrush Stretch="Fill"
+                        ImageSource="/Images/med9.png" />
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel Grid.Row="0"
+                    Margin="12,17,0,10">
+            <TextBlock Text="MedReminder"
+                       Margin="9,-7,0,0"
+                       Style="{StaticResource PhoneTextTitle1Style}"
+                       FontFamily="Bernard MT Condensed"
+                       FontSize="69.333"
+                       Foreground="#FF35E00F"
+                       Height="70" />
+            <TextBlock x:Name="textBlock"
+                       HorizontalAlignment="Left"
+                       Height="64"
+                       Margin="135,3,0,0"
+                       TextWrapping="Wrap"
+                       Text="Help"
+                       VerticalAlignment="Top"
+                       Width="174"
+                       FontSize="48"
+                       Foreground="#FF3AF710" />
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel"
+              Grid.Row="1"
+              Margin="4,0,5,12">
+
+            <ScrollViewer Margin="0,0,0,707"
+                          RenderTransformOrigin="0.484,1.019">
+                <StackPanel RenderTransformOrigin="0.501,1.013"
+                            Width="441">
+
+                    <TextBlock x:Name="textBlock_Copy"
+                               HorizontalAlignment="Left"
+                               Height="40"
+                               Margin="0,6,0,0"
+                               TextWrapping="Wrap"
+                               Text="Adding new Medicine Reminder"
+                               VerticalAlignment="Top"
+                               Width="446"
+                               FontSize="29.333"
+                               Foreground="#FFABEE1C"
+                               FontStyle="Italic"
+                               FontFamily="Aharoni" />
+                    <TextBlock x:Name="textBlock_Copy2"
+                               HorizontalAlignment="Left"
+                               Height="176"
+                               Margin="15,1,0,0"
+                               TextWrapping="Wrap"
+                               Text="please go to add new reminder on launching application or add new on list of reminders page"
+                               VerticalAlignment="Top"
+                               Width="382"
+                               FontSize="29.333"
+                               Foreground="#FF3AF710" />
+                    <TextBlock x:Name="textBlock_Copy1"
+                               HorizontalAlignment="Left"
+                               Height="70"
+                               Margin="15,1,0,0"
+                               TextWrapping="Wrap"
+                               Text="How to add new medicine reminder"
+                               VerticalAlignment="Top"
+                               Width="446"
+                               FontSize="29.333"
+                               Foreground="#FFABEE1C"
+                               FontStyle="Italic"
+                               FontFamily="Aharoni" />
+                    <TextBlock x:Name="textBlock_Copy3"
+                               HorizontalAlignment="Left"
+                               Height="238"
+                               Margin="15,1,0,0"
+                               TextWrapping="Wrap"
+                               Text="Enter the name of Medicine,enter the prescribed dosage such as 1X3 then manual count the number of tablets then enter the number."
+                               VerticalAlignment="Top"
+                               Width="382"
+                               FontSize="29.333"
+                               Foreground="#FF3AF710" />
+                    <TextBlock x:Name="textBlock_Copy4"
+                               HorizontalAlignment="Left"
+                               Height="70"
+                               Margin="15,1,0,0"
+                               TextWrapping="Wrap"
+                               Text="How to view your medicine reminders"
+                               VerticalAlignment="Top"
+                               Width="446"
+                               FontSize="29.333"
+                               Foreground="#FFABEE1C"
+                               FontStyle="Italic"
+                               FontFamily="Aharoni" />
+                    <TextBlock x:Name="textBlock_Copy5"
+                               HorizontalAlignment="Left"
+                               Height="90"
+                               Margin="15,1,0,0"
+                               TextWrapping="Wrap"
+                               Text="On launching the app go to my medicine reminders."
+                               VerticalAlignment="Top"
+                               Width="382"
+                               FontSize="29.333"
+                               Foreground="#FF3AF710" />
+                    <TextBlock x:Name="textBlock_Copy6"
+                               HorizontalAlignment="Left"
+                               Height="70"
+                               Margin="15,1,0,0"
+                               TextWrapping="Wrap"
+                               Text="How to remove a reminder manually"
+                               VerticalAlignment="Top"
+                               Width="446"
+                               FontSize="29.333"
+                               Foreground="#FFABEE1C"
+                               FontStyle="Italic"
+                               FontFamily="Aharoni" />
+                    <TextBlock x:Name="textBlock_Copy7"
+                               HorizontalAlignment="Left"
+                               Height="126"
+                               Margin="15,1,0,0"
+                               TextWrapping="Wrap"
+                               Text="On list of reminders window touch on reminder to remove the remove reminder button"
+                               VerticalAlignment="Top"
+                               Width="402"
+                               FontSize="29.333"
+                               Foreground="#FF3AF710" />
+                    <TextBlock x:Name="textBlock_Copy8"
+                               HorizontalAlignment="Left"
+                               Height="36"
+                               Margin="15,1,0,0"
+                               TextWrapping="Wrap"
+                               Text="Interpreting reminders list "
+                               VerticalAlignment="Top"
+                               Width="432"
+                               FontSize="29.333"
+                               Foreground="#FFABEE1C"
+                               FontStyle="Italic"
+                               FontFamily="Aharoni" />
+                    <TextBlock x:Name="textBlock_Copy9"
+                               HorizontalAlignment="Left"
+                               Height="290"
+                               Margin="15,1,0,0"
+                               TextWrapping="Wrap"
+                               Text="On the list of reminders;the first is the reminder content .The first date shows the begin time of medication and the second date and time is the shows the end of medication period. "
+                               VerticalAlignment="Top"
+                               Width="402"
+                               FontSize="29.333"
+                               Foreground="#FF3AF710" />
+
+
+
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+
+    </Grid>
+
+</phone:PhoneApplicationPage>
